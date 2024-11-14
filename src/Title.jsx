@@ -1,7 +1,8 @@
 import "./Title.css"
 import { Name } from "./Description.jsx";
 
-function Title({title, college, age=18}) {
+function Title({title, college, age=18, subjects}) {
+  let list = subjects.map((subject) => <li>{subject}</li>)
   return (
     // React fragment
     <>
@@ -10,6 +11,7 @@ function Title({title, college, age=18}) {
         {/* <Name /> */}
       </h1>
       <h3>Pursuing BE in {college}</h3>
+      <h4>Subject is {list} </h4>
       <h3>Age: {age + 2-2}</h3>
     </>
   );

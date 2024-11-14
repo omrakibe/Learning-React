@@ -1,14 +1,21 @@
+import { Name } from "./Description.jsx";
+
 function Title() {
   return (
-    <div>
-      <h1>Myself, Rakibe Om Santosh</h1>
+    // React fragment
+    <>
+      <h1>
+        Myself,
+        <Name />
+      </h1>
       <h3>Pursuing BE in KJ College of Engineering Management and Reaseach</h3>
-    </div>
+    </>
   );
 }
+function Add() {
+  let a = 10;
+  let b = 20;
+  return <p>Addition of A and B is: {a + b}</p>;
+}
 
-function Description() {
-    return <p>Click here to go on GreatPark</p>;
-  }
-
-export  {Title, Description};
+export { Title, Add };

@@ -1,14 +1,16 @@
+import "./Title.css"
 import { Name } from "./Description.jsx";
 
-function Title() {
+function Title({title, college, age=18}) {
   return (
     // React fragment
     <>
-      <h1>
-        Myself,
-        <Name />
+      <h1 className="Title"> 
+        Myself, {title}
+        {/* <Name /> */}
       </h1>
-      <h3>Pursuing BE in KJ College of Engineering Management and Reaseach</h3>
+      <h3>Pursuing BE in {college}</h3>
+      <h3>Age: {age + 2-2}</h3>
     </>
   );
 }

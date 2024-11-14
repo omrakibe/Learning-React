@@ -5,11 +5,12 @@ import {Description} from "./Description.jsx"
 function App() {
   return (
     <form action="https://villas-booking-system.onrender.com">
-      <Title/>
+      <Title title="Om Rakibe" college="KJ College of Engineering Management and Reaseach" age={19}/>
       <Add/>
       <Description/>
       <button className="btn">GreatPark</button>
-      <Title/>
+      
+      <Title title="Ashish" college="GH Raisoni College of Engineering"/>
       <Description/>
       <button>GreatPark</button>
     </form>

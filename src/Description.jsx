@@ -4,7 +4,9 @@ function Description() {
 
 function Name() {
   let name = "Om Rakibe";
-  return <p>{name.toUpperCase()}</p>;
+  return (
+  <p>{name.toUpperCase()}</p>
+  );
 }
 
 export { Description, Name };
